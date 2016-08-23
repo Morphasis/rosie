@@ -20,6 +20,13 @@ title: Get Involved
 <div class="index-header">
   <h1>school of mind</h1>
 </div>
+<form action="https://getsimpleform.com/messages?form_api_token=71fc6bf5786d2d94b459d84d1bee35e6" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <!-- <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' /> -->
+  <!-- all your input fields here.... -->
+  <input type='text' name='test' />
+  <input type='submit' value='Test form' />
+</form>
 <div class="row sign-up-form">
   <div class="col-sm-6 sign-up-inputs">
     <div class="form-group">
@@ -34,38 +41,76 @@ title: Get Involved
           </div>
         </div>
       </div>
-      <div class="row">
-        <div >
-          <input type="text" id="firstName" placeholder="Full Name" class="form-control" autofocus>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <input type="text" id="address_1" placeholder="Address Line 1" class="form-control" autofocus>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <input type="text" id="firstName" placeholder="Address Line 2" class="form-control" autofocus>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <input type="text" id="firstName" placeholder="Address Line 3" class="form-control" autofocus>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <div class="form-group">
-            <label for="comment">Message:</label>
-            <textarea class="form-control" rows="5" id="comment"></textarea>
+      <form action="https://getsimpleform.com/messages?form_api_token=71fc6bf5786d2d94b459d84d1bee35e6" method="post" ng-show="prop.value == 'School'">
+        <div class="row">
+          <div >
+            <input type="text" name="Name of school" id="name_of_school" placeholder="Name of school" class="form-control" autofocus>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <button type="button" name="button" class="btn btn-primary">Send</button>
-    </div>
+        <div class="row">
+          <div>
+            <input type="text" name="Location of school" id="location_of_school" placeholder="Location of school" class="form-control" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <input type="text" name="Address Line 2" id="name_of_Lead_teacher" placeholder="Address Line 2" class="form-control" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <input type="text" name="Position of Lead Teacher" id="position_of_lead_teacher" placeholder="Position of Lead Teacher" class="form-control" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <input type="text" name="Contact Email" id="contact_email" placeholder="Contact Email" class="form-control" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <input type="text" name="Target year group(s)" id="target_year_group" placeholder="Target year group(s)" class="form-control" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <input type="text" name="Estimated size of group" id="size_estimate" placeholder="Estimated size of group" class="form-control" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <input type="text" name="Possible dates" id="possible_dates" placeholder="Possible dates" class="form-control" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <input type="text" name="Possible times" id="possible_times" placeholder="Possible times" class="form-control" autofocus>
+          </div>
+        </div>
+
+        <div class="row">
+          Do you have facilities to host a talk, including a means of projecting a presentation?
+          <div>
+            <input type="radio" name="facilities yes" value="yes"> Yes<br>
+            <input type="radio" name="facilities no" value="no"> No
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <input type="text" name="" id="topics_to_request" placeholder="Do you have any particular topics you’d like to request? " class="form-control" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <input type="text" name="" id="comments_questions" placeholder="Any other comments or questions?" class="form-control" autofocus>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <button type='submit' value='Test form' class="btn btn-primary">Send</button>
+        </div>
+      </form>
   </div>
   <div class="col-sm-6">
     <div ng-show="prop.value == 'School'" style="margin-top: 20px;">
@@ -107,10 +152,6 @@ title: Get Involved
     <div ng-show="prop.value == 'Volunteer'" style="margin-top: 20px;">
 
     </div>
-    <h1>Programmatically set description</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
   </div>
 </div>
 <div class="row index-footer">
