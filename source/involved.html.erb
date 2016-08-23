@@ -28,11 +28,8 @@ title: Get Involved
           <label for="sel1">I would like to get invloved as</label>
         </div>
         <div class="col-sm-6">
-          <div class="form-group">
-            <select class="form-control" id="sel1">
-              <option>School</option>
-              <option>Speaker</option>
-              <option>Volunteer</option>
+          <div get-involved class="form-group">
+            <select class="form-control" ng-model="prop.value" ng-options="v for v in prop.values">
             </select>
           </div>
         </div>
@@ -71,6 +68,45 @@ title: Get Involved
     </div>
   </div>
   <div class="col-sm-6">
+    <div ng-show="prop.value == 'School'" style="margin-top: 20px;">
+      <p>
+        Do you work at a secondary school in London? Would you like your students to receive a free talk about mental health from the School of Mind?
+      </p>
+      <p>
+        The School of Mind is an initiative that brings professionals from the world of psychology to speak to secondary school students about mental health. Each talk has a different theme and title, chosen by the speaker (but let us know if you have a particular issue you’d like us to include!)
+      </p>
+      <p>
+        We are currently welcoming applications from new schools who would like to take part.
+      </p>
+      <p>
+        In order to host our speakers, we kindly request that you…
+      </p>
+      <ul>
+        <li>Have facilities to host a talk, including a projector</li>
+        <li>Are flexible with your possible dates and times</li>
+        <li>
+          <div style="padding-left: 20px;">
+          Our speakers all have full-time jobs and are restricted in the time that they can take off work
+          </div>
+        </li>
+        <li>Let us film the talk</li>
+        <li>
+          <div style="padding-left: 20px;">
+          We create a video from each talk that will be uploaded to our website. Although these videos focus on the speakers, we still ask you to obtain filming permission from the guardians of any student attending our talk
+        </div>
+        </li>
+        <li>Don’t mind us mentioning your school and featuring the talk on our website.</li>
+      </ul>
+      <p>
+        If you think your school and students would benefit from a visit from the School of Mind, send us a message and we’ll get back to you as soon as possible.
+      </p>
+    </div>
+    <div ng-show="prop.value == 'Speaker'" style="margin-top: 20px;">
+
+    </div>
+    <div ng-show="prop.value == 'Volunteer'" style="margin-top: 20px;">
+
+    </div>
     <h1>Programmatically set description</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
