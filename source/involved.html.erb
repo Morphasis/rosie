@@ -34,9 +34,39 @@ title: Get Involved
           </div>
         </div>
       </div>
+      <form action="https://getsimpleform.com/messages?form_api_token=71fc6bf5786d2d94b459d84d1bee35e6" method="post" ng-show="prop.value == 'Speaker'">
+        <div class="row">
+          <div>
+            <input type="text" name="Name" id="Name" placeholder="Name" class="form-control" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <input type="text" name="Email address" id="email_address" placeholder="Email address" class="form-control" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <textarea rows="4" cols="50" type="text" name="Tell us a little about yourself and your experiences working in mental health..." id="tell_about_yourself" placeholder="Tell us a little about yourself and your experiences working in mental health" class="form-control" autofocus></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <textarea rows="4" cols="50" type="text" name="What do you think you’d focus on in your talk? This can change a bit at a later date." id="focus_of_talk" placeholder="What do you think you’d focus on in your talk? This can change a bit at a later date." class="form-control" autofocus></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <textarea rows="4" cols="50" type="text" name="Do you have any questions or comments?" id="questions_comments" placeholder="Do you have any questions or comments?" class="form-control" autofocus></textarea>
+          </div>
+        </div>
+        <div class="row" ng-show="prop.value == 'Speaker'">
+          <button type='submit' value='Test form' class="btn btn-primary">Send</button>
+        </div>
+      </form>
       <form action="https://getsimpleform.com/messages?form_api_token=71fc6bf5786d2d94b459d84d1bee35e6" method="post" ng-show="prop.value == 'School'">
         <div class="row">
-          <div >
+          <div>
             <input type="text" name="Name of school" id="name_of_school" placeholder="Name of school" class="form-control" autofocus>
           </div>
         </div>
@@ -100,7 +130,7 @@ title: Get Involved
           </div>
         </div>
         </div>
-        <div class="row">
+        <div class="row" ng-show="prop.value == 'School'">
           <button type='submit' value='Test form' class="btn btn-primary">Send</button>
         </div>
       </form>
