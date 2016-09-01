@@ -125,3 +125,17 @@ pre {
   text-align: center;
   margin-top: 10px;
 }
+.past-talks-card{
+  margin-top: 20px;
+  padding: 10px;
+  padding-bottom: 0px;
+  span{
+    color: $grey;
+  }
+  &:first-child{
+    padding-left: 0;
+  }
+  &:last-child{
+    padding-right: 0;
+  }
+}
